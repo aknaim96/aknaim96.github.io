@@ -3,9 +3,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Khan Construction CA</title>
+        
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Khan Construction">
+        <meta name="author" content="Ahmed Khan">
+        <meta name="description" content="Khan Construction Group. Real estate development contractor, quality through experience and training in Canadian construction.">
+        <meta name="keywords" content="HTML, Search Engine Optimization, Full Stack Development, Catepillar, Heavy Equipment Operator, Heavy Civil Construction, Home Renovations, Ontario, Canada, University of Toronto">
+        
+        <link rel="canonical" href="{{pageUrl}}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="website.css">
+        <link rel="stylesheet" href="grid.css">
 </head>
 <body>
-    <h1>hello world</h1>
-</body>
+    <header>
+        <img class="logo" src="" alt="logo">
+
+        <nav class="main_navbar">
+            <ul class="nav_links">
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Services</a></li>
+                
+            </ul>
+        </nav>
+        <a href=""><button class="btn-push red">REQUEST QUOTE</button></a>
+    </header>
+    
+    <div class="About">
+        <h1>Khan Construction</h1>
+        <p>Founded by Ahmed Khan with years of experience and training in Canadian heavy civil and home remodeling industry. Khan Construction prioritizes customer satisfaction through efficiency in project management. </p>
+        <p></p>
+    </div>
+    
+
+    <div class="Gallery">
+        <h2>Gallery of Services</h2>
+
+        !-- The grid: four columns -->
+        <div class="row">
+
+            <div class="column">
+                <img src="img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <!-- The expanding image container -->
+        <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+    </div>
+    
+    
+
+    <div class="Services">
+        <h3>Services</h3>
+        <ul>
+            <li>Kitchen remodel</li>
+                <ul>
+                    <li>Backsplash</li>
+                    <li>Cabinets and Countertop</li>
+                    <li>Kitchen Sink and Faucet</li>
+                </ul>
+            <li>Bathroom remodel</li>
+                <ul>
+                    <li>Standard: Floor tiles, Vanity, Sink and Faucet, Toilet, and Accessories.</li>
+                    <li>Shower: base, faucet, tiles, and sliding glass door.</li>
+                </ul>
+            <li>Custom Carpentry</li>
+                <ul>
+                    <li>Framing and Drywall</li>
+                    <li>Mudding and Paint</li>
+                    <li>Baseboards and Trim</li>
+                    <li>Laminate flooring</li>
+                    <li>Stairs</li>
+                </ul>
+            <li>Curb Appeal</li>
+                <ul>
+                    <li>Front and Garage Door</li>
+                    <li>Interlocking driveway, walkway, and steps.</li>
+                    <li>Landscaping</li>
+                </ul>
+        </ul>
+    </div>
+    
+    <div class="quoteRequest">
+        <h4>Request a Quote</h4>
+        <form action="results.html" method="">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John"><br>
+            
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+            
+            <label for="email"><e-mail>e-mail:</e-mail></label><br>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com"><br>
+            <label for="phone"><e-mail>Phone:</label><br>
+            <input type="text" id="phone" name="phone" placeholder="6476476476"><br>
+            <br>
+            
+            <label for="budget">Set Personal Budget:</label>
+                <select id="budget" name="Budget">
+                    <option value="500">$500+</option>
+                    <option value="1000">$1,000+</option>
+                    <option value="10,000">$10,000+</option>
+                    <option value="100,000+">$100,000+</option>
+                </select><br><br>
+
+                <label for="checklist">Select all that apply:</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Kitchen remodel</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> Bathroom remodel</label><br>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
+                <label for="vehicle4"> Custom Carpentry</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Curb Appeal</label><br>
+                <br>
+                
+            <label for="comments">Comments:</label><br>
+            <input type="text" id="comments" name="comments" placeholder="Type inquiry here."><br><br>
+            
+            <input type="submit" value="Submit">
+          </form>
+    </div></body>
 </html>
